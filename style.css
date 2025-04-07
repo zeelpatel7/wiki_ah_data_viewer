@@ -1,0 +1,76 @@
+body {
+  background-color: #f9f9f9;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+/* Wraps each table */
+.table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* Actual table style */
+table {
+  width: max-content;
+  min-width: 100%;
+  white-space: nowrap;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/* Sticky synced scrollbar */
+.custom-scrollbar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  z-index: 999;
+  background: #f1f1f1;
+  border-top: 1px solid #ccc;
+  display: none; /* Only show the one related to the active tab */
+}
+
+.custom-scrollbar-track {
+  height: 1px;
+}
+
+.custom-scrollbar-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.custom-scrollbar-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.custom-scrollbar-container::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Filters layout */
+.filters-section {
+  margin-bottom: 20px;
+}
+
+.filters-section .form-label {
+  margin-bottom: 4px;
+}
+
+.filters-section .form-select,
+.filters-section .form-check {
+  min-width: 160px;
+}

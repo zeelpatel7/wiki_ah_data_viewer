@@ -1,0 +1,6 @@
+Paste in CMD for setting server:
+cd "C:\Zeel\UChicago\CEHD\Web Dev"
+python -m http.server
+
+Paste in chrome for website:
+http://localhost:8000
